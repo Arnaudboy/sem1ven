@@ -19,13 +19,7 @@ def court_inf_6000(hash_tri)
 end
 
 def court_inf(hash_tri) 
-		new_hash = {}
-	hash_tri.each do |k, v|
-		if k < 6000
-			new_hash[k]  = v
-		end
-	end
-	return new_hash.max
+	hash_tri.select { |nom,prix| nom < 6000 }.max
 end
 
 def perform
