@@ -41,8 +41,8 @@ $my_hash = Hash[*prix.zip(devises).flatten]
 $my_hash = remove_dol($my_hash)
 	p lowmoney($my_hash)
 	p bigmoney($my_hash)
-	#p include_coin?($your_hash)
-	#p court_inf_6000($your_hash)
+	p include_coin?($your_hash)
+	p court_inf_6000($your_hash)
 	p court_inf($my_hash)
 end
 
